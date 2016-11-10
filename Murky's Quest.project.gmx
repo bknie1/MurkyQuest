@@ -3,33 +3,66 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_Murloc1</sound>
-    <sound>sound\snd_Sea_Waves_SoundBible_com_946156036</sound>
-    <sound>sound\snd_bensound_cute</sound>
+    <sounds name="Murky">
+      <sound>sound\snd_walk_1</sound>
+      <sound>sound\snd_walk_4</sound>
+      <sound>sound\snd_walk_5</sound>
+      <sound>sound\snd_walk_6</sound>
+      <sound>sound\snd_walk_2</sound>
+      <sound>sound\snd_walk_3</sound>
+      <sound>sound\snd_Murloc1</sound>
+    </sounds>
+    <sounds name="Ambience">
+      <sound>sound\snd_Sea_Waves_SoundBible_com_946156036</sound>
+      <sound>sound\snd_Forest</sound>
+      <sound>sound\snd_Elwynn</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_MurkyBackIdle</sprite>
-    <sprite>sprites\spr_MurkyFrontIdle</sprite>
-    <sprite>sprites\spr_MurkyWalkRight</sprite>
-    <sprite>sprites\spr_MurkyWalkLeft</sprite>
-    <sprite>sprites\spr_MurkyFrontWalk</sprite>
-    <sprite>sprites\spr_MurkyBackWalk</sprite>
     <sprite>sprites\spr_Puffer</sprite>
+    <sprite>sprites\spr_BLANK</sprite>
+    <sprites name="Murky">
+      <sprite>sprites\Murky_Walk_L</sprite>
+      <sprite>sprites\Murky_Idle_L</sprite>
+      <sprite>sprites\Murky_Idle_R</sprite>
+      <sprite>sprites\Murky_Walk_R</sprite>
+    </sprites>
+    <sprites name="Structure">
+      <sprite>sprites\sprite6_Grass</sprite>
+      <sprite>sprites\sprite7_Rock</sprite>
+      <sprite>sprites\sprite8_RockEdge</sprite>
+      <sprite>sprites\sprite9_Tree</sprite>
+      <sprite>sprites\sprite10_Tree_LowRes</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_beach</background>
+    <background>background\Sky</background>
+    <background>background\bg_Rock</background>
+    <background>background\Forest</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_WarCraft</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Murky</object>
-    <object>objects\obj_music</object>
-    <object>objects\obj_beachambi</object>
-    <object>objects\obj_Puffer</object>
+    <objects name="Structure">
+      <object>objects\obj_Tree</object>
+      <object>objects\obj_Rock</object>
+      <object>objects\obj_LittleTree</object>
+      <object>objects\obj_RockEdge</object>
+      <object>objects\obj_Grass</object>
+    </objects>
+    <objects name="NPC">
+      <object>objects\obj_Puffer</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Beach</room>
+    <room>rooms\rm_Forest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
